@@ -155,7 +155,7 @@ class MTextStyleProperty extends MObjectProperty<TextStyle> {
             allowNegative: false,
             defaultValue: const TextStyle().height,
           ),
-      }, super(name: "TextStyle", value: value, defaultValue: defaultValue);
+      }, super(name: "style", value: value, defaultValue: defaultValue);
 
   final Map<String, MProperty> props;
 

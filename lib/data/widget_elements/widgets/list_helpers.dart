@@ -196,7 +196,7 @@ mixin ListElementWidgetStateMixin<A extends WidgetElement, T extends ElementWidg
 
   List<Widget> getRowChildren(Axis axis) {
     List<Widget> items = [];
-    for (int i = 0; i < childrenIds.length; i++) {
+    for (int i = childrenIds.length - 1; i >= 0 ; i--) {
       var widgetElement = widgetBoard.getWidgetElement(childrenIds[i]);
 
       Widget result = Stack(

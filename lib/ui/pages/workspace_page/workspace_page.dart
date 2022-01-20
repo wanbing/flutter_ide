@@ -121,7 +121,7 @@ class _WorkspacePageState extends State<WorkspacePage> {
       child: Shortcuts(
         manager: MShortCutManager(),
         shortcuts: {
-          LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.space): QuickAccessWidgetsIntent(),
+          LogicalKeySet(LogicalKeyboardKey.shift, LogicalKeyboardKey.space): QuickAccessWidgetsIntent(),
           LogicalKeySet(LogicalKeyboardKey.delete): DeleteIntent(),
         },
         child: Focus(

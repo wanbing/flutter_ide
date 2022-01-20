@@ -39,11 +39,11 @@ class _ColumnElementWidgetState extends State<ColumnElementWidget>
         mainAxisAlignment: element.mainAxisAlignment.value,
         children: [
         ...getRowChildren(Axis.vertical),
-    /*if(!hasExpanded())
-          Flexible(
-            child: _getArrow(Axis.vertical),
-          ),*/
-    ],
+          if (!hasExpanded())
+            Flexible(
+              child: getArrow(Axis.vertical),
+            )
+      ],
     );
 
     if (childrenIds.isEmpty) {

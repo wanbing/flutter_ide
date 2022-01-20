@@ -31,11 +31,12 @@ class _RowElementWidgetState extends State<RowElementWidget>
         textDirection: element.textDirection.value,
         children: [
         ...getRowChildren(Axis.horizontal),
-    /*if(!hasExpanded() && element.mainAxisAlignment.value == MainAxisAlignment.start)
+          if (!hasExpanded() &&
+            element.mainAxisAlignment.value == MainAxisAlignment.start)
           Flexible(
-            child: _getArrow(Axis.horizontal),
-          ),*/
-    ],
+            child: getArrow(Axis.horizontal),
+          )
+      ],
     );
 
     if (childrenIds.isEmpty) {

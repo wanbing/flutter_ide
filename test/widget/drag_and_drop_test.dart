@@ -25,7 +25,7 @@ void main() {
     await tester.tapAt(Offset(0, 0));
     await tester.pumpAndSettle();
 
-    await tester.tap(find.text("New Widget (or ctrl+space)"));
+    await tester.tap(find.text("New Widget (or shift+space)"));
     await tester.pump(Duration(seconds: 1));
 
     final gesture = await tester.createGesture(

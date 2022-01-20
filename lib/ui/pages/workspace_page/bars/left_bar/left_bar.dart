@@ -21,7 +21,7 @@ class LeftBar extends StatelessWidget {
         children: <Widget>[
           Expanded(child: WidgetTree()),
           RaisedButton(
-              child: Text("New Widget (or ctrl+space)"),
+              child: Text("New Widget (or shift+space)"),
               onPressed: onNewWidget,
           ),
         ],

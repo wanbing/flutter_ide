@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
                 builder: (context) {
                   return MediaQuery(
                     data: MediaQuery.of(context).copyWith(
-                      textScaleFactor: 0.8,
+                      textScaleFactor: 1,
                       devicePixelRatio: 11,
                     ),
                     child: WorkspacePage(),
